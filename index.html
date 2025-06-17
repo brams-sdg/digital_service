@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Learning Hub - Formations et Produits Numériques</title>
+    <title>Hamed Digital Pro - Formations et Produits Numériques</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -20,8 +20,8 @@
         
         .whatsapp-bubble {
             position: fixed;
-            bottom: 30px;
-            right: 30px;
+            bottom: 20px;
+            right: 20px;
             z-index: 100;
             transition: all 0.3s ease;
         }
@@ -77,6 +77,16 @@
             bottom: -50px;
             left: -50px;
         }
+        
+        /* Ensure Tailwind's hidden class is not overridden */
+        .hidden {
+            display: none !important;
+        }
+        
+        /* Custom style for navigation underline */
+        .nav-underline {
+            border-bottom: 4px solid #6B46C1;
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -86,14 +96,15 @@
     </a>
 
     <!-- Navigation -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="bg-white shadow-md sticky top-0 z-50 nav-underline">
         <div class="container mx-auto px-4 py-4">
             <div class="flex justify-between items-center">
-                <!-- Logo -->
-                <a href="#" class="text-2xl font-bold text-indigo-600 flex items-center">
-                    <i class="fas fa-graduation-cap mr-2"></i> 
-                    <span>Digital<span class="text-blue-500">Learn</span></span>
-                </a>
+                <!-- Logo and Navigation Tabs -->
+                <div class="flex items-center space-x-8">
+                    <a href="#" class="flex items-center">
+                        <img src="logo.jpeg" alt="Hamed Digital Pro Logo" class="h-20">
+                    </a>
+                </div>
                 
                 <!-- Mobile menu button -->
                 <div class="md:hidden">
@@ -159,9 +170,9 @@
                     </div>
                 </div>
                 <div class="md:w-1/2 flex justify-center">
-                    <img src="https://images.unsplash.com/photo-1541462608143-67571c6738dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                         alt="Personne lisant un livre numérique" 
-                         class="rounded-lg shadow-2xl max-w-full h-auto md:max-w-md">
+                    <img src="https://images.unsplash.com/photo-1541462608143-67571c6738dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                          alt="Personne lisant un livre numérique"
+                          class="rounded-lg shadow-2xl max-w-full h-auto md:max-w-md">
                 </div>
             </div>
         </div>
@@ -194,9 +205,9 @@
                                 </a>
                             </div>
                             <div class="md:w-1/2 flex justify-center">
-                                <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1011&q=80" 
-                                     alt="E-book psychologie de l'argent" 
-                                     class="rounded-lg shadow-md max-w-full h-auto md:max-w-xs">
+                                <img src="la_psychologie_de_largen.jpeg"
+                                      alt="E-book psychologie de l'argent"
+                                      class="rounded-lg shadow-md max-w-full h-auto md:max-w-xs">
                             </div>
                         </div>
                     </div>
@@ -217,9 +228,9 @@
                                 </a>
                             </div>
                             <div class="md:w-1/2 flex justify-center">
-                                <img src="https://images.unsplash.com/photo-1586287011570-a628bf3007f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                                     alt="E-book modèles de contrat" 
-                                     class="rounded-lg shadow-md max-w-full h-auto md:max-w-xs">
+                                <img src="160_contrat.jpeg"
+                                      alt="E-book modèles de contrat"
+                                      class="rounded-lg shadow-md max-w-full h-auto md:max-w-xs">
                             </div>
                         </div>
                     </div>
@@ -256,7 +267,7 @@
                 <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover transition duration-300">
                     <div class="relative">
                         <img 
-                             alt="Père riche, père pauvre" class="w-full h-48 object-cover" src="pere_riche_pere_pauvre.jpg">
+                              alt="Père riche, père pauvre" class="w-full h-48 object-cover" src="pere_riche_pere_pauvre.jpg">
                         <div class="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
                             Best-seller
                         </div>
@@ -282,7 +293,7 @@
                 <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover transition duration-300">
                     <div class="relative">
                         <img 
-                             alt="L'homme le plus riche de Babylone" class="w-full h-48 object-cover" src="hmme_le_plus_riche_de_babylone.jpeg">
+                              alt="L'homme le plus riche de Babylone" class="w-full h-48 object-cover" src="hmme_le_plus_riche_de_babylone.jpeg">
                     </div>
                     <div class="p-6">
                         <h3 class="font-bold text-xl mb-2 text-gray-800">"L'homme le plus riche de Babylone" - Ebook</h3>
@@ -304,7 +315,7 @@
                 <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover transition duration-300">
                     <div class="relative">
                         <img 
-                             alt="160 modèles de contrat" class="w-full h-48 object-cover" src="160_contrat.jpeg">
+                              alt="160 modèles de contrat" class="w-full h-48 object-cover" src="160_contrat.jpeg">
                         <div class="absolute top-2 right-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">
                             Nouveau
                         </div>
@@ -329,7 +340,7 @@
                 <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover transition duration-300">
                     <div class="relative">
                         <img 
-                             alt="Plus malin que le diable" class="w-full h-48 object-cover" src="plus_malin_que_le_diable.jpg">
+                              alt="Plus malin que le diable" class="w-full h-48 object-cover" src="plus_malin_que_le_diable.jpg">
                     </div>
                     <div class="p-6">
                         <h3 class="font-bold text-xl mb-2 text-gray-800">"Plus malin que le diable" - Ebook</h3>
@@ -351,7 +362,7 @@
                 <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover transition duration-300">
                     <div class="relative">
                         <img 
-                             alt="La psychologie de l'argent" class="w-full h-48 object-cover" src="la_psychologie_de_largen.jpeg">
+                              alt="La psychologie de l'argent" class="w-full h-48 object-cover" src="la_psychologie_de_largen.jpeg">
                         <div class="absolute top-2 right-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded">
                             Populaire
                         </div>
@@ -372,11 +383,11 @@
                     </div>
                 </div>
                 
-                <!-- Product 6: Deux Minutes pour Convaincre -->
+                <!-- Product 6 -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-md card-hover transition duration-300">
                     <div class="relative">
                         <img 
-                             alt="Deux Minutes pour Convaincre" class="w-full h-48 object-cover" src="deux_minut_pour_convrainvre.jpeg">
+                              alt="Deux Minutes pour Convaincre" class="w-full h-48 object-cover" src="deux_minut_pour_convrainvre.jpeg">
                         <div class="absolute top-2 right-2 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">
                             Nouveau
                         </div>
@@ -398,9 +409,12 @@
                 </div>
             </div>
             
-            <div class="text-center mt-10">
-                <a href="https://wa.me/22670315721" class="inline-block bg-white border border-indigo-600 text-indigo-600 font-semibold px-6 py-3 rounded-lg hover:bg-indigo-50 transition duration-300">
+            <div class="text-center mt-10 space-y-4">
+                <a href="https://wa.me/22670315721" class="inline-block bg-white border border-indigo-600 text-indigo-600 font-semibold px-8 py-3 rounded-lg hover:bg-indigo-50 transition duration-300">
                     Contacter pour tous les produits
+                </a>
+                <a href="https://swihtmul.mychariow.com?campaign=SCC7YZB1HL" class="inline-block bg-indigo-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-indigo-700 transition duration-300">
+                    Découvrir plus de produits numériques
                 </a>
             </div>
         </div>
@@ -420,7 +434,7 @@
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100 card-hover transition duration-300">
                     <div class="relative">
                         <img 
-                             alt="Formation Alibaba" class="w-full h-48 object-cover" src="alibaba.jpeg">
+                              alt="Formation Alibaba" class="w-full h-48 object-cover" src="alibaba.jpeg">
                         <div class="absolute bottom-0 left-0 bg-indigo-600 text-white px-3 py-1 rounded-tr-lg">
                             <i class="fas fa-clock mr-1"></i> 10h de contenu
                         </div>
@@ -453,7 +467,7 @@
             </div>
             
             <div class="text-center mt-10">
-                <a href="https://wa.me/22670315721" class="inline-block bg-indigo-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-indigo-700 transition duration-300">
+                <a href="https://wa.me/22670315721" class="inline-block bg-indigo-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-indigo-700 transition duration-300">
                     Contacter pour toutes les formations
                 </a>
             </div>
@@ -463,7 +477,7 @@
     <!-- Features Section -->
     <section class="py-16 bg-gradient-to-r from-indigo-50 to-blue-50">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-2 text-gray-800">Pourquoi choisir DigitalLearn ?</h2>
+            <h2 class="text-3xl font-bold text-center mb-2 text-gray-800">Pourquoi choisir Hamed Digital Pro ?</h2>
             <div class="section-divider"></div>
             <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
                 Nous vous offrons une expérience d'apprentissage unique et des contenus de qualité.
@@ -494,8 +508,8 @@
                 
                 <!-- Feature 3 -->
                 <div class="bg-white p-8 rounded-xl shadow-sm text-center hover:shadow-md transition duration-300">
-                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-certificate text-indigo-600 text-2xl"></i>
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center">
+                        <i class="fas fa-certificate text-indigo-600 text-xl"></i>
                     </div>
                     <h3 class="font-bold text-xl mb-3 text-gray-800">Certification</h3>
                     <p class="text-gray-600">
@@ -519,9 +533,9 @@
                 <!-- Testimonial 1 -->
                 <div class="bg-gray-50 p-6 rounded-lg testimonial-card">
                     <div class="flex items-center mb-4">
-                        <img src="https://randomuser.me/api/portraits/women/32.jpg" 
-                             alt="Claire D." 
-                             class="w-12 h-12 rounded-full object-cover">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg"
+                              alt="Claire D."
+                              class="w-12 h-12 rounded-full object-cover">
                         <div class="ml-4">
                             <h4 class="font-semibold text-gray-800">Claire D.</h4>
                             <div class="flex text-yellow-400">
@@ -541,9 +555,9 @@
                 <!-- Testimonial 2 -->
                 <div class="bg-gray-50 p-6 rounded-lg testimonial-card">
                     <div class="flex items-center mb-4">
-                        <img src="https://randomuser.me/api/portraits/men/42.jpg" 
-                             alt="Marc L." 
-                             class="w-12 h-12 rounded-full object-cover">
+                        <img src="https://randomuser.me/api/portraits/men/42.jpg"
+                              alt="Marc L."
+                              class="w-12 h-12 rounded-full object-cover">
                         <div class="ml-4">
                             <h4 class="font-semibold text-gray-800">Marc L.</h4>
                             <div class="flex text-yellow-400">
@@ -563,9 +577,9 @@
                 <!-- Testimonial 3 -->
                 <div class="bg-gray-50 p-6 rounded-lg testimonial-card">
                     <div class="flex items-center mb-4">
-                        <img src="https://randomuser.me/api/portraits/women/65.jpg" 
-                             alt="Sophie M." 
-                             class="w-12 h-12 rounded-full object-cover">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg"
+                              alt="Sophie M."
+                              class="w-12 h-12 rounded-full object-cover">
                         <div class="ml-4">
                             <h4 class="font-semibold text-gray-800">Sophie M.</h4>
                             <div class="flex text-yellow-400">
@@ -578,7 +592,7 @@
                         </div>
                     </div>
                     <p class="text-gray-600 italic">
-                        "La formation sur Alibaba m'a permis de monter mon business d'import-export en 2 mois seulement. Des conseils précis et applicables!"
+                        "La formation sur Alibaba a permis de monter mon business d'import-export en 2 mois seulement. Des conseils précis et applicables!"
                     </p>
                 </div>
             </div>
@@ -595,12 +609,12 @@
                 </p>
                 
                 <form class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
-                    <input type="email" 
-                           placeholder="Votre adresse email" 
-                           class="flex-grow px-4 py-3 rounded-lg focus:outline-none text-gray-800"
+                    <input type="email"
+                            placeholder="Votre email"
+                            class="flex-grow px-4 py-3 rounded-lg focus:outline-none text-gray-800 shadow-md"
                            required>
-                    <button type="submit" 
-                            class="bg-white text-indigo-600 font-semibold px-6 py-3 rounded-lg hover:bg-indigo-50 transition duration-300">
+                    <button type="submit"
+                             class="bg-white text-indigo-600 font-semibold px-6 py-3 rounded-lg hover:bg-indigo-50 transition duration-300">
                         S'abonner
                     </button>
                 </form>
@@ -620,7 +634,7 @@
                     <h2 class="text-3xl font-bold mb-6 text-gray-800">Notre mission</h2>
                     <div class="section-divider" style="margin: 1rem 0;"></div>
                     <p class="text-gray-600 mb-4">
-                        DigitalLearn a été créé avec une vision simple: rendre l'éducation financière et le développement personnel accessibles à tous.
+                        Hamed Digital Pro a été créé avec une vision simple: rendre l'éducation financière et le développement personnel accessibles à tous.
                     </p>
                     <p class="text-gray-600 mb-6">
                         Nous croyons que la connaissance est la clé du succès et nous nous engageons à fournir des contenus de la plus haute qualité à des prix abordables.
@@ -636,13 +650,12 @@
                     </div>
                 </div>
                 <div class="md:w-1/2 md:pl-12">
-                    <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D&auto=format&fit=crop&w=1470&q=80" 
-                         alt="Équipe DigitalLearn" 
-                         class="rounded-lg shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D&auto=format&fit=crop&w=1470&q=80"
+                          alt="Équipe Hamed Digital Pro"
+                          class="rounded-lg shadow-xl">
                 </div>
             </div>
         </div>
-    </div>
     </section>
 
     <!-- Contact Section -->
@@ -650,53 +663,53 @@
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-2 text-gray-800">Contactez-nous</h2>
             <div class="section-divider"></div>
-            <p class="text-center text-gray-600 mb-12"> max-w-2xl mx-auto
-                Nous sommes là !pour répondre à toutes vos questions. N'hésitez pas à nous contacter!
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                Nous sommes là pour répondre à toutes vos questions. N'hésitez pas à nous contacter!
             </p>
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <!-- Formations Contact -->
+                <!-- Contact Form -->
                 <div class="bg-white p-8 rounded-xl shadow-sm">
                     <h3 class="text-xl font-semibold mb-6 text-gray-800">Envoyez-nous un message</h3>
                     
                     <form>
                         <div class="mb-6">
                             <label for="name" class="block text-gray-700 font-medium mb-2">Votre nom</label>
-                            <input type="text" 
-                                   id="name" 
-                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-teal-2 focus:ring-indigo-500">
-                            </div>
-                            
-                            <div class="mb-6">
-                                <label for="email" class="block text-gray-700 mb-2">Votre Email</label>
-                                    <input type="email" 
-                                           id="email" 
-                                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                                    </div>
-                                
-                                <div class="mb-6">
-                                    <label for="subject" class="block text-gray-700 font-medium mb-2">Sujet</label>
-                                    <select id="subject" class="w-full px-4 py-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                                        <option value="" selected disabled>Choisissez un sujet</option>
-                                        <option value="products">Question sur un produit</option>
-                                        <option value="trainings">Question sur une formation</option>
-                                        <option value="billing">Problème de paiement</option>
-                                        <option value="other">Autre</option>
-                                    </select>
-                                </div>
-                                
-                                <div class="mb-6">
-                                    <label for="message" class="block text-gray-700 font-medium mb-2">Votre message</label>
-                                    <textarea id="message" 
-                                              rows="4" 
-                                              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
-                                </div>
-                                
-                                <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition duration-300 w-full">
-                                    Envoyer le message
-                                </button>
-                            </form>
+                            <input type="text"
+                                    id="name"
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
                         </div>
+                        
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Votre email</label>
+                            <input type="email"
+                                    id="email"
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Sujet</label>
+                            <select id="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                                <option value="" selected disabled>Choisissez un sujet</option>
+                                <option value="products">Question sur un produit</option>
+                                <option value="trainings">Question sur une formation</option>
+                                <option value="billing">Problème de paiement</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Votre message</label>
+                            <textarea id="message"
+                                       rows="4"
+                                       class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition duration-300 w-full">
+                            Envoyer le message
+                        </button>
+                    </form>
+                </div>
                 
                 <!-- Contact Info -->
                 <div>
@@ -708,8 +721,8 @@
                                 <i class="fas fa-envelope text-indigo-600 text-xl"></i>
                             </div>
                             <div>
-                                <h4> class="font-bold text-gray-800">Email</h4>
-                                <p class="text-gray-600">contact@digitallearn.com</p>
+                                <h4 class="font-bold text-gray-800">Email</h4>
+                                <p class="text-gray-600">contact@hameddigitalpro.com</p>
                             </div>
                         </div>
                         
@@ -723,101 +736,91 @@
                                 <a href="https://wa.me/22670315721" class="text-indigo-600 hover:underline inline-block mt-1">
                                     Cliquez ici pour discuter
                                 </a>
-                            </div> </div>
-                        
-                            <div class="flex items-start">
-                                <div class="bg-indigo-100 p-3 rounded-full mr-4">
-                                    <i class="fas fa</i>-clock text-indigo-600 text-xl"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-gray-800">Horaires</h4>
-                                    <p class="text-gray-600">Lundi -di Vendredi : 9h00 - 18h00</p>
-                                    <p class="text-gray-600">Samedi : 10h00 - 15h00</p>
-                                </div>
                             </div>
-                            
-                            <div class="mt-8">
-                                <h4 class="font-bold text-gray-800 mb-4">Suivez-nous</h4>
-                                <div class="flex space-x-4">
-                                    <a href="#" class="bg-gray-200 text-gray-700 p-3 rounded-full hover:bg-indigo-100 hover:text-blue-600 transition duration-300">
-                                        <i class="fab fa-facebook"></i>
-                                    </a>
-                                    <a href="#" class="bg-gray-200 text-gray-700 p-3 rounded-full hover:bg-gray-100 hover:text-indigo-600 transition duration-300">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a href="#" class="bg-gray-200 text-gray-700 p-3 rounded-full hover:bg-blue-100 hover:text-indigo-600 transition duration-300">
-                                        <i class="fab fa-linkedin"></i>
-                                    </a>
-                                    <a href="#" class="bg-gray-200 text-gray-700 p-3 rounded-full hover:bg-indigo-100 hover:text-indigo-600 transition duration-300">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-clock text-indigo-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Horaires</h4>
+                                <p class="text-gray-600">Lundi - Vendredi : 09h00 - 18h00</p>
+                                <p class="text-gray-600">Samedi : 10h00 - 15h00</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h3 class="font-bold text-gray-800 mb-4">Suivez-nous</h3>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-gray-200 text-gray-700 p-3 rounded-full hover:bg-blue-100 hover:text-blue-600 transition duration-300">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="bg-gray-200 text-gray-700 p-3 rounded-full hover:bg-blue-100 hover:text-blue-500 transition duration-300">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="bg-gray-200 text-gray-700 p-3 rounded-full hover:bg-blue-100 hover:text-blue-600 transition duration-300">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="bg-gray-200 text-gray-700 p-3 rounded-full hover:bg-blue-100 hover:text-blue-600 transition duration-300">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">12">
-        <div class="container mx-auto">
-            px-4
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <!-- Column 1 -->
                 <div>
-                    <h3> class="text-xl font-bold mb-4 flex items-center">
-                        <i class="fas fa-graduation-cap mr-2"></i>
-                        <span>Digital<span class="text-blue-400">Learn</span></span>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <img src="logo.jpeg" alt="Hamed Digital Pro Logo" class="h-20 mr-2">
+                        <span>Hamed Digital Pro</span>
                     </h3>
-                    <p class="text-gray-400">
-                        Votre partenaire pour le développement personnel et professionnel.
-                    </p>
+                    <p class="text-gray-400">Votre partenaire pour le développement personnel et professionnel.</p>
                 </div>
                 
                 <!-- Column 2 -->
                 <div>
-                    <h4 class="font-bold text-lg mb-4">Navigation</h4>
+                    <h3 class="font-bold text-lg mb-4">Navigation</h3>
                     <ul class="space-y-2">
                         <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Accueil</a></li>
-                        <li><li><a href="#products" class="text-gray-400 hover:text-white">Produits</a>
-                            </li>
-                        <li><a href="#trainings" class="text-gray-400 hover:text-white">Formations</a>
-</li>
-                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">À propos</a>
-                        </li>
-                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a>
-                    </li>
+                        <li><a href="#products" class="text-gray-400 hover:text-white transition duration-300">Produits</a></li>
+                        <li><a href="#trainings" class="text-gray-400 hover:text-white transition duration-300">Formations</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition duration-300">Témoignages</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
                 </div>
                 
                 <!-- Column 3 -->
                 <div>
-                    <h4 class="font-bold text-lg mb-4">Mentions légales</h4>
+                    <h3 class="font-bold text-lg mb-4">Mentions légales</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white">CGV</a>
-                        </li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Politique de confidentialité</a>
-</li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Mentions légales</a>
-</li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Politique de remboursement</a>
-</li>
-                        </ul>
-                    </div>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">CGV</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Politique de confidentialité</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Mentions légales</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Politique de remboursement</a></li>
+                    </ul>
+                </div>
                 
                 <!-- Column 4 -->
                 <div>
-                    <h4 class="font-bold text-lg mb-4">Paiements sécurisés</h4>
+                    <h3 class="font-bold text-lg mb-4">Paiements sécurisés</h3>
                     <div class="grid grid-cols-3 gap-2 mb-4">
                         <div class="bg-gray-800 p-3 rounded flex items-center justify-center">
-                            <i class="fab fa-visa fa-cc-2x text-2xl"></i>
+                            <i class="fab fa-visa text-2xl"></i>
                         </div>
                         <div class="bg-gray-800 p-3 rounded flex items-center justify-center">
-                            <i class="fab fa-mastercard fa-cc fa-2x"></i>
+                            <i class="fab fa-mastercard text-2xl"></i>
                         </div>
                         <div class="bg-gray-800 p-3 rounded flex items-center justify-center">
-                            <i class="fab fa-paypal fa-cc-2x"></i>
+                            <i class="fab fa-paypal text-2xl"></i>
                         </div>
                     </div>
                     <p class="text-gray-400 text-sm">
@@ -827,73 +830,78 @@
             </div>
             
             <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-                <p>© 2023 DigitalLearn</pp>. Tous les droits réservés.</p>
+                <p>© 2025 Hamed Digital Pro. Tous les droits réservés.</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Toggle Menu Mobile Menu
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-        
-        // Functionality Carousel 
-        let currentSlide = 0;
-        const carousel = document.getElementById('carousel');
-        const items = document.querySelectorAll('.carousel-item');
-        const totalItems = document.querySelectorAll.length;
-        const indicators = document.querySelectorAll('.carousel-indicator');
-        
-        function showSlide(index) {
-            if (index >= totalItems) {
-                index = totalItems0;
-            } else if (index < totalItems0) {
-                index = index - totalItems - 1;
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    console.log('Menu toggled'); // Debugging
+                });
+            } else {
+                console.error('Erreur : mobile-menu-button ou mobile-menu introuvable');
             }
-            
-            carousel.style.transform = "translateX(${-index * - 100}%)";
-            currentSlide = index;
-            
-            // Indicators Update 
-            indicators.forEach((indicator, i) => {
-                if (i === currentSlide) {
-                    indicator.classList.remove('bg-indigo-300');
-                    indicator.classList.add('bg-blue-600');
-                } else {
-                    indicator.classList.remove('bg-bg-indigo-600');
-                    indicator.classList.add('bg-indigo-300');
+
+            // Carousel Functionality
+            let currentSlide = 0;
+            const carousel = document.getElementById('carousel');
+            const items = document.querySelectorAll('.carousel-item');
+            const totalItems = items.length;
+            const indicators = document.querySelectorAll('.carousel-indicator');
+
+            function showSlide(index) {
+                if (index >= totalItems) {
+                    index = 0;
+                } else if (index < 0) {
+                    index = totalItems - 1;
                 }
+
+                carousel.style.transform = `translateX(${-index * 100}%)`;
+                currentSlide = index;
+
+                // Update indicators
+                indicators.forEach((indicator, i) => {
+                    if (i === currentSlide) {
+                        indicator.classList.remove('bg-indigo-300');
+                        indicator.classList.add('bg-indigo-600');
+                    } else {
+                        indicator.classList.remove('bg-indigo-600');
+                        indicator.classList.add('bg-indigo-300');
+                    }
+                });
+            }
+
+            // Next button
+            document.getElementById('carousel-next').addEventListener('click', () => {
+                showSlide(currentSlide + 1);
             });
-        }
-        
-        // Button Next 
-        document.getElementById('carousel-next').addEventListener('click', () => {
-            showSlide(currentSlide + 1);
-        });
-        
-        // Button Previous 
-        document.getElementById('carousel-prev').prevaddEventListener('click', () => {
-            showSlide(currentSlide);
-        });
-        
-        // Click Indicator 
-        indicators.forEach(indicator => {
-            indicator.addEventListener('click', () => {
-                const index = parseInt(indicator.getElementById('data-index'));
-                const index = parseInt(index);
-                showSlide(index);
-                byId('data-id');
+
+            // Previous button
+            document.getElementById('carousel-prev').addEventListener('click', () => {
+                showSlide(currentSlide - 1);
             });
-        }));
-        
-        // Slide Auto slide every 5 seconds
-        setInterval(() => {
-            showSlide(currentSlide + 1);
-        }, 5000);
+
+            // Indicator click
+            indicators.forEach(indicator => {
+                indicator.addEventListener('click', () => {
+                    const index = parseInt(indicator.getAttribute('data-index'));
+                    showSlide(index);
+                });
+            });
+
+            // Auto slide every 5 seconds
+            setInterval(() => {
+                showSlide(currentSlide + 1);
+            }, 5000);
+        });
     </script>
-</ </body>
+</body>
 </html>
